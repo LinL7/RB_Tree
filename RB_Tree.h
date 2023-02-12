@@ -11,7 +11,7 @@ public:
     ~RB_Tree();
     void Left_Rotate(RB_Tree_Node<T>* current_data);
     void Right_Rotate(RB_Tree_Node<T>* current_data);
-    void Insert(T insert data);
+    void Insert(T insert_data);
     int Delete_Node(T delete_data);
     void Fix_Tree(RB_Tree_Node<T>* current_Node);
     void Erase_Node(RB_Tree_Node<T>* node_Del);

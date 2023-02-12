@@ -1,3 +1,4 @@
+#include <stddef.h> /* NULL */
 #include "RB_Tree.h"
 
 template <class T>
@@ -17,7 +18,7 @@ RB_Tree<T>::~RB_Tree()
 
 /* insert a node to RB_Tree */
 template<class T>
-void RB_Tree::Insert(T insert_data)
+void RB_Tree<T>::Insert(T insert_data)
 {
     RB_Tree_Node<T>* temp_Node = Root_Node;
     /* find appropriate place to insert */
@@ -87,7 +88,7 @@ int RB_Tree<T>::Delete_Node(T delete_data)
         {
             delete temp_Node;
         }
-        else if(temp_Node->LChild == NULL && temp_RChild != NULL)
+        else if(temp_Node->LChild == NULL && temp_Node->RChild != NULL)
         /* del_b_1: temp_node->*Child substitute temp_node->Parent->*Child */
         {
             if(temp_Node != Root_Node)
@@ -367,7 +368,7 @@ void RB_Tree<T>::Erase_Node(RB_Tree_Node<T>* node_Del)
     node_Del->LChild = NULL;
     node_Del->RChild = NULL;
     node_Del->data = NULL;
-    delete Node_del;
+    delete node_Del;
 }
 
     

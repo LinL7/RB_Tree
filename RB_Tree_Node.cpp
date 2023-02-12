@@ -1,3 +1,4 @@
+#include <stddef.h> /* NULL */
 #include "RB_Tree_Node.h"
 
 template <class T>

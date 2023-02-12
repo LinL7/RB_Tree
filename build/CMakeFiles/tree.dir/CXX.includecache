@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/linq/workspace/RB_Tree/RB_Tree.cpp
+stddef.h
+-
+RB_Tree.h
+/home/linq/workspace/RB_Tree/RB_Tree.h
+
+/home/linq/workspace/RB_Tree/RB_Tree.h
+RB_Tree_Node.h
+/home/linq/workspace/RB_Tree/RB_Tree_Node.h
+
+/home/linq/workspace/RB_Tree/RB_Tree_Node.h
+

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libnode.a  CMakeFiles/node.dir/RB_Tree_Node.cpp.o
+/usr/bin/ranlib libnode.a
